@@ -36,6 +36,6 @@ int main()
     if (turn == 1)
         cout << "Akshat" << endl;
     else
-        cout << "Malvaika" << endl;
+        cout << "Malvika" << endl;
     return 0;
 }
