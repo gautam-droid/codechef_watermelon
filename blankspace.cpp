@@ -1,33 +1,36 @@
+//RADHE RADHE
+
 #include <iostream>
 using namespace std;
 int main()
 {
-    int t, n, j, count;
+    int t, n, j, count, store;
     cin >> t;
-    while (t--)
+    for (int i = 0; i < t; i++)
     {
         cin >> n;
         int arr[n];
-        for (int i = 0; i < n; i++)
-        {
-            cin >> arr[i];
+        count=0;
+        store=0;
+        for (int j = 0; j < n; j++)
+        {   
+            cin >> arr[j];
         }
-        while (true)
+        for(int k=0;k<n;k++)
         {
-            if (arr[j] == 0)
+            if (arr[k] == 0)
             {
                 count++;
             }
             else
+            {
+                store = max(store,count);
                 count = 0;
+                
+            }
         }
 
-        // for (int i = 0; i < n; i++)
-        // {
-        //     cout << arr[i] << endl;
-        // }
-
-        cout << count << endl;
+     cout << max(store,count) << endl;
     }
     return 0;
 }
