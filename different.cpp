@@ -12,9 +12,9 @@ int main()
     if (n != s.length())
         return 0;
     set<char> st(s.begin(), s.end());
-    if (s.length() > 2 && st.size() == 1)
-        cout << "-1";
+    if(s.length()>26)
+    cout<<"-1";
     else
-        cout << (n - st.size());
+    cout << (n - st.size());
     return 0;
 }
