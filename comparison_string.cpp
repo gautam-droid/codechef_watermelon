@@ -1,6 +1,4 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
 using namespace std;
 
 int main()
@@ -14,8 +12,6 @@ int main()
         cin >> n;
         string s;
         cin >> s;
-        vector<int> v;
-        cout << s[5] << endl;
         if (n != s.length())
         {
             return 0;
